@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEJUK - Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Burger Menu -->
+    <div class="burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Menu Items -->
+    <ul class="menu" id="menu">
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-logo-container">
+      <img src="img/logo.jpeg" alt="Logo SEJUK">
+      <h1>SEJUK</h1>
+    </div>
+    <p class="tagline">"Kesegaran Teh Pilihan"</p>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about-us">
+    <h2>Tentang Kami</h2>
+    <p>
+      SEJUK adalah perusahaan minuman teh dengan varian rasa buah yang dimulai pada awal tahun 2025. 
+      Bisnis ini dirintis oleh delapan siswa SMK dengan semangat untuk menghadirkan minuman teh botol yang segar, 
+      lezat, dan berkualitas tinggi. Kami percaya bahwa kombinasi teh alami dan rasa buah yang otentik dapat 
+      memberikan pengalaman minum yang berbeda kepada masyarakat.
+    </p>
+    <p>
+      Dengan dedikasi tinggi dan usaha keras, kami memulai bisnis ini dari nol. Meski dengan sumber daya yang 
+      terbatas, kami berkomitmen untuk selalu menghadirkan produk terbaik. Dalam waktu singkat, SEJUK berhasil 
+      menarik perhatian banyak konsumen dan terus berkembang hingga kini.
+    </p>
+
+    <h3>Visi</h3>
+    <p>Menciptakan minuman teh buah yang menjadi pilihan utama masyarakat Indonesia, dengan kualitas terbaik dan ramah lingkungan.</p>
+
+    <h3>Misi</h3>
+    <ul>
+      <li>Menyediakan minuman teh buah yang segar, sehat, dan berkualitas.</li>
+      <li>Mendorong inovasi produk untuk memenuhi kebutuhan pelanggan.</li>
+      <li>Mendukung pengembangan lokal dengan bahan-bahan alami terbaik.</li>
+    </ul>
+
+    <h3>Tim atau Pendiri</h3>
+    <ul>
+      <li>Abrian Jogja Vianus Sinaga</li>
+      <li>Alki dafiansyah</li>
+      <li>Azka Syahdan Saputra</li>
+      <li>Hanzhalah</li>
+      <li>Muhamad Erpan Ramadan</li>
+      <li>Muhammad Firdaus</li>
+      <li>Muhammad Yunan Hilmi</li>
+      <li>Nabila Khoirunissa</li>
+    </ul>
+  </section>
+
+  <!-- Produk Section -->
+<section id="products" class="products">
+    <h2>Produk Kami</h2>
+    <div class="product-container">
+      <div class="product-item">
+        <img src="img/peach-tea.jpeg" alt="Peach Tea">
+        <h3>Peach Tea</h3>
+        <p>Teh dengan rasa buah persik yang menyegarkan dipadukan dengan jelly yang melimpah.</p>
+      </div>
+      <div class="product-item">
+        <img src="img/apple-tea.jpeg" alt="Apple Tea">
+        <h3>Apple Tea</h3>
+        <p>Teh dengan rasa apel yang manis dan segar dipadukan dengan jelly yang melimpah.</p>
+      </div>
+      <div class="product-item">
+        <img src="img/lemon-tea.jpeg" alt="Lemon Tea">
+        <h3>Lemon Tea</h3>
+        <p>Teh dengan rasa lemon yang asam dan menyegarkan dipadukan dengan jelly yang melimpah.</p>
+      </div>
+      <div class="product-item">
+        <img src="img/thai-tea.jpeg" alt="Thai Tea">
+        <h3>Thai Tea</h3>
+        <p>Teh khas Thailand dengan rasa creamy dan aroma khas ditambah boba.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="contact-us">
+    <h2>Hubungi Kami Untuk Pemesanan</h2>
+    <p>WhatsApp: <a href="https://wa.me/0881010878652" target="_blank">0881010878652</a></p>
+    <p>Email: <a href="mailto:sejuk2025@gmail.com">sejuk2025@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 SEJUK. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Burger Menu Toggle
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

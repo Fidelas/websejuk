@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #e8f7ff;
+    padding-top: 60px; /* Menghindari navbar menutupi konten */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background: #004c6d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #89cff0;
+    transform: scale(1.1);
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger div {
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #004c6d;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .menu li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #89cff0, #6fb3d2);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-logo-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero .tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #f0f8ff;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 2rem 1rem;
+    background: #f0f8ff;
+}
+
+.about-us h2 {
+    text-align: center;
+    color: #004c6d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+}
+
+.about-us h3 {
+    color: #006f96;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.about-us ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.about-us ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Produk Section */
+.products {
+    padding: 2rem;
+    background: #f0f8ff;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product-item {
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 1rem 0;
+    color: #007acc;
+}
+
+.product-item p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+}
+
+/* Responsiveness untuk Produk */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 90%;
+    }
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: #b3d9f7;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.contact-us h2 {
+    color: #004c6d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us p a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #004c6d;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
